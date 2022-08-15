@@ -1,0 +1,102 @@
+<!-- Also put visitor being able to comments 
+Including the Form: Full name, message and email field are required
+Optional: phone (xxx)-xxx-xxxx, company, occupation, address
+action="https://httpbin.org/post" method="post"
+can put the aside here, when invalid message -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Not sure if this is necessary-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Not sure if this is necessary-->
+        <title>Mimi's Page</title>
+        <!--load all Font Awesome styles -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Kalam:wght@300&family=Satisfy&display=swap" rel="stylesheet"> 
+        <link href="fontawesomeIcon/fontawesome-free-6.1.2-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="mystyle.css" type="text/css">
+        <script src="myscript.js"></script>
+    </head>
+    <body>
+        <div class="website">
+            <header>
+                <div id="social">
+                    <!-- Only works if classes are defined (in font-awesome css) Show only on home page-->
+                    <a href="https://github.com/Mimi-Dang" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mimi-dang-08781914a/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+                <h1> Contact Me!</h1>
+            </header>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="interests.html">Interests</a></li>
+                        <li><a href="expertise.html">Expertise</a></li>
+                        <li><a href="contacts.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <main class="form">
+                <div class="reason">
+                    <p>Reason to contact?</p>
+                    <label for="reason-1">Comments/Questions</label>
+                    <input type="radio" id="reason-1" name="reason" onclick="deleteBusiness();"> <br>
+                    <label for="reason-2">Business Related</label>
+                    <input type="radio" id="reason-2" name="reason" onclick="generateBusiness();"> <br>
+                    <label for="reason-3">Other</label>
+                    <input type="radio" id="reason-3" name="reason" onclick="deleteBusiness();"> <br>
+                </div>
+                <form action="https://httpbin.org/post " method="post" id="form" name="form" 
+                onsubmit="return validateForm(this);">
+                    <div class="regForm">
+                        <label for="name">Full Name (*):</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="regForm">
+                        <label for="email">Email (*):</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="regForm">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(###) ###-####" pattern="\(\d{3}\) \d{3}-\d{4}">
+                    </div>
+
+                    <!-- If it is for business -> these might need to be added manually in JS -->
+                    <div class="business"></div>
+                    <div class="message1">
+                        <label for="message1">Comments (*):</label>
+                        <textarea id="message1" name="message1" placeholder="Enter your message..." required></textarea>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Send Form</button>
+                        <button type="reset" onclick="clearErrors();">Clear</button>
+                    </div>                    
+                </form>
+
+            </main>
+            
+            <!-- Not necessary for all of them. At least one html needs it -->
+            <aside>
+                <div id="errors"></div>
+
+            </aside>
+
+            <footer class="copyright">
+                <p><span>Mimi Dang</span></p>
+                <p>This is for <em>WEB222</em> Final Assessment </p>
+                <p>&copy; Copyright 2022</p>
+            </footer>
+        </div>
+
+    </body>
+</html>

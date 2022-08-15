@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Not sure if this is necessary-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Not sure if this is necessary-->
+        <title>Mimi's Page</title>
+        <!--load all Font Awesome styles -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Kalam:wght@300&family=Satisfy&display=swap" rel="stylesheet"> 
+        <link href="fontawesomeIcon/fontawesome-free-6.1.2-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="mystyle.css" type="text/css">
+        <script src="myscript.js"></script>
+    </head>
+    <body>
+        <div class="website">
+            <header>
+                <div id="social">
+                    <!-- Only works if classes are defined (in font-awesome css) Show only on home page-->
+                    <a href="https://github.com/Mimi-Dang" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mimi-dang-08781914a/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+                <h1> My Interest/Hobbies</h1>
+            </header>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="interests.html">Interests</a></li>
+                        <li><a href="expertise.html">Expertise</a></li>
+                        <li><a href="contacts.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <main id="interests">
+                <!-- Using tables: VTuber, music, Editing Video, Food-->
+                <table id="hobby">
+                    <thead>
+                        <tr>
+                            <th>Interest/Hobby</th>
+                            <th>Description/Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>VTuber</td>
+                            <td>
+                                <p>VTuber are virtual character that are livestreaming mostly on YouTube.
+                                    Since 2020, I've been watching NIJISANJI EN and have been interested in livestreaming.
+                                    I am currently still in the process of creating my character. Which mean drawing, which
+                                    I am not good in yet.
+                                </p>
+                                <p>Here is a little clip of my favorite VTuber agency: <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wc6Ktfh3U4A" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Editing Video</td>
+                            <td>
+                                <p>I have been working on my video editing skill since 2019, for the purpose of helping
+                                    my friend post her vlogs on YouTube. Her Youtube Channel is can be accessed here: <br>
+                                    <a href="https://www.youtube.com/channel/UCGypWM0ljXt1c9aEUci6lIA/videos">Emilie Chuan</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Food</td>
+                            <td>
+                                <figure>
+                                    <img id="food" width="400px" src="./image/IMG_6036.JPG" alt="Food from Japan">
+                                    <figcaption>
+                                        Here are some food pictures that was taken when I went to Japan
+                                    </figcaption>
+                                </figure>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gaming</td>
+                            <td>
+                                <p>I am currently into horror game such as <span id="game">Phasmophobia</span>
+                                    <br>
+                                    Here is a little clip of me playing with a friend. 
+                                    <span id="scared"> Nothing to be scared.</span>
+                                    <video width="320" controls>
+                                        <source src="./video/Hunting_Time_compressed.mp4" type="video/mp4">
+                                        Your browser doesn't support mp4
+                                    </video>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><span class="note"> NOTE:
+
+                            </span> These are only some interests and hobbies that I am currently working on</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </main>
+
+            <footer class="copyright">
+                <p><span>Mimi Dang</span></p>
+                <p>This is for <em>WEB222</em> Final Assessment </p>
+                <p>&copy; Copyright 2022</p>
+            </footer>
+        </div>
+
+    </body>
+</html>

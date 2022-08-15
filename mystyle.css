@@ -1,0 +1,400 @@
+/* --------------------  General Width --------------------------- */
+/*Changed the background of the whole web page*/
+body {
+    background-image: linear-gradient(45deg, rgb(64, 66, 71) 20%, rgb(22, 151, 216));
+}
+.website {
+    background-color:azure;
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    border: 3px solid black;
+    box-shadow: 25px 30px 10px rgb(67, 67, 67);
+    text-align: center; /* Center everything in the middle */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*To be deleted at the end - just for visual references*/
+header, footer {
+    width: 100%;
+    padding: 10px 0;
+    /* border: 1px solid green; */
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+footer {
+    border-top: 2px solid black;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+}
+
+/*If aside exist*/
+main, aside, nav {
+    float: left;
+    padding: 15px 0;
+    /* border: 1px solid red; */
+}
+
+main {
+    width: 61%;
+}
+
+aside {
+    width: 25%;
+}
+
+footer {
+    clear: both;
+}
+
+/* ------------------------ Main #home properties w/o aside ------------------------*/
+#home {
+    width: 82%;
+    text-align: left;
+    padding: 0 2.5em;
+}
+
+.statement {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#statement {
+    text-decoration: underline;
+}
+
+/* index.html honesty statement*/
+#fullName {
+    font-weight: 700;
+    font-family: 'Kalam', cursive;
+}
+
+.info {
+    text-decoration: underline;
+}
+
+/* ------------------------ Main #interests properties w/o aside ------------------------*/
+#interests, #expertise {
+    width: 86%;
+    text-align: left;
+    padding-left: 2.5em;
+}
+
+
+/* -------------------------------- Navigation ---------------------------------*/
+/*Menu on the left vertically*/
+
+/* nav {
+    display: inline-block;
+} */
+
+nav ul{
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav li {
+    float: left;
+} */
+
+nav li a {
+    display: block;
+    color: purple;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: rgb(43, 165, 226);
+    color: rgb(255, 2, 213);
+}
+
+
+
+/* -------------------------- Social media Icon --------------------------------*/
+.fa-linkedin {color: #0b75ad;}
+.fa-github {color: black;}
+#social {
+    float: left;
+    cursor:pointer;
+}
+
+.fa-github, .fa-linkedin {
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.fa-github:hover, .fa-linkedin:hover {
+    font-size: 50px;
+}
+
+
+/* ---------------------------- Form format ------------------------------------*/
+.form {
+    margin: 2px auto;
+    padding: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 145px;
+    text-align: right;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    width: 300px;
+    /* border: 1px solid green; */
+    margin: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: blue;
+}
+
+textarea {
+    vertical-align: top;
+    resize: vertical;
+}
+
+.reason {
+    width: 30%;
+    float: left;
+    text-align: left;
+}
+
+.reason p {
+    font-family: 'Kalam', cursive;
+}
+
+.reason label {
+    text-align: left;
+}
+
+.reason input {
+    width: auto;
+}
+
+input:empty, 
+input:invalid, 
+textarea:invalid, 
+#phone:invalid, 
+#phone:empty, 
+input:required,
+#message2:placeholder-shown {
+    border: 2px solid red;
+}
+
+input:valid, 
+textarea:valid, 
+#phone:valid
+#message2:valid {
+    border: 2px solid green;
+}
+
+#errors {
+    color: red;
+}
+
+/* --------------------------------- For Button -----------------------------------*/
+.button{
+    text-align: right;
+}
+
+.button button {
+    margin: 10px;
+    padding: 10px;
+    width: 195px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: rgb(0, 251, 255);
+    background-color: black;
+    border: 2px solid grey;
+    border-style: outset;
+    border-radius: 30px;
+}
+
+.btn:visited {
+    border-style: inset;
+}
+
+.btn:hover{
+    background-color: rgb(0, 0, 99);
+    font-size:large;
+}
+
+/* ----------------------------- For Interest Table -------------------------------*/
+#hobby {
+    /* border: 3px solid rgb(13, 203, 246); */
+    border-radius: 15px;
+    width: 96%;
+}
+
+#hobby thead {
+    text-decoration: underline;
+}
+
+#hobby tbody tr td{
+    border-bottom: 3px solid rgb(8, 3, 139);
+}
+
+#hobby tbody tr td,  table tfoot tr td {
+    margin: 10px;
+    padding: 10px;
+}
+
+#hobby thead tr th {
+    margin: 10px;
+    padding: 10px;
+}
+
+.note {
+    color: rgb(255, 0, 191);
+}
+
+figure {
+    margin: 0;
+}
+
+#scared {
+    text-decoration:line-through;
+}
+
+#game {
+    font-family: 'Creepster', cursive;
+    font-size: larger;
+}
+
+/* ----------------------------- For Expertise List -------------------------------*/
+.skills li {
+    list-style-type:none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.skills li::before {
+    content: '> ';
+    margin-left: -15px;
+}
+
+.school {
+    color: rgb(84, 84, 84);
+    background-color: rgb(24, 226, 240);
+    border: 3px solid rgb(27, 200, 212);
+    border-style: inset;
+    border-radius: 12px;
+    width: 35%;
+    margin: 15px 0;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgb(17, 102, 121);
+}
+
+h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 10px black;
+    color: rgb(253, 255, 255);
+}
+
+/* -------------------------- AJAX Profile-card Properties -----------------------*/
+
+.AJAX {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    min-width: 400px;
+    border: 3px solid black;
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    border: 3px solid rgb(88, 114, 210);
+    background-color: rgb(88, 114, 210);
+    margin-right: 20px;
+}
+
+.profile-card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.profile-email {
+    margin: 0;
+    font-size: 1em;
+}
+
+.profile-email a:hover {
+    color: rgb(216, 225, 233);
+    background-color: rgb(39, 109, 179);
+}
+
+
+
+/* ----------------- When Screen width is smaller than 1050px ---------------------*/
+@media screen and (max-width: 1200px) {
+    .website {
+        width: auto;
+    }
+    main, aside, nav {
+        float: none;
+        width:auto;
+    }
+
+    header {
+        margin: 0 auto;
+    }
+
+    .form {
+        clear: both;
+    }
+
+    #hobby {
+        text-align: center;
+    }
+
+    .language, .skills, .education {
+        text-align: center;
+    }
+
+    .school {
+        text-align: center;
+        width: 95%;
+        margin: 25px;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .profile-card {
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+    }
+}
